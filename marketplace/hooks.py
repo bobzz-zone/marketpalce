@@ -89,24 +89,28 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Sales Invoice":{
+		#"before_submit": ['marketplace.marketplace.selling.overide_make_gl'],
+		"on_cancel": ['marketplace.marketplace.sinv_market.cancel_minv']
+	}
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"marketplace.tasks.all"
 # 	],
-# 	"daily": [
-# 		"marketplace.tasks.daily"
-# 	],
+#	"daily": [
+#		"marketplace.task.daily"
+#	]
 # 	"hourly": [
 # 		"marketplace.tasks.hourly"
 # 	],
@@ -116,7 +120,7 @@ app_license = "MIT"
 # 	"monthly": [
 # 		"marketplace.tasks.monthly"
 # 	]
-# }
+}
 
 # Testing
 # -------

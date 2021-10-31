@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "creation": "2021-09-28 15:03:36.184278",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "income_account",
+  "diskon_account",
+  "cost_center",
+  "account_head",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "income_account",
+   "fieldtype": "Link",
+   "label": "income_account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "account_head",
+   "fieldtype": "Link",
+   "label": "account_head",
+   "options": "Account"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "diskon_account",
+   "fieldtype": "Link",
+   "label": "diskon_account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "cost_center",
+   "options": "Cost Center"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-09-30 16:17:14.203039",
+ "modified_by": "Administrator",
+ "module": "Marketplace",
+ "name": "Setting Account",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
