@@ -31,7 +31,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2021-10-02 09:24:48.191962",
+ "modified": "2022-05-07 11:56:28.661911",
  "modified_by": "Administrator",
  "module": "Marketplace",
  "name": "Gen Sinv",
@@ -49,6 +49,5 @@
   }
  ],
  "sort_field": "modified",
- "sort_order": "DESC",
- "track_changes": 1
+ "sort_order": "DESC"
 }
